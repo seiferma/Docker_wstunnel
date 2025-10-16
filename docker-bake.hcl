@@ -20,3 +20,9 @@ target "default" {
     VERSION_TINI = "${VERSION_TINI}"
   }
 }
+
+target "test" {
+  inherits = ["default"]
+  platforms = ["linux/amd64"]
+  tags = ["test-image"]
+}

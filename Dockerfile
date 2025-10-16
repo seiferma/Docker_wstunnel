@@ -24,5 +24,4 @@ COPY --from=downloader --chmod=755 --chown=root  /tmp/wstunnel /bin/wstunnel
 COPY --from=downloader --chmod=755 --chown=root  /tmp/tini /bin/tini
 COPY --from=downloader --chmod=644 --chown=root  /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 
-ENTRYPOINT ["tini", "--"]
-CMD ["wstunnel", "server", "${SERVER_PROTOCOL}://${SERVER_LISTEN}:${SERVER_PORT}"]
+ENTRYPOINT ["tini", "--", "wstunnel"]

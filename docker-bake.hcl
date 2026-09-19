@@ -1,6 +1,6 @@
 variable "VERSION_WSTUNNEL" {
   # renovate: datasource=github-releases depName=erebe/wstunnel
-  default = "10.7.1"
+  default = "11.0.0"
 }
 
 variable "VERSION_TINI" {

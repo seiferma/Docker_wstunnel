@@ -5,5 +5,7 @@
         ":configMigration",
         "github>seiferma/renovate-selfhosted:preset-docker2"
     ],
-    "dependencyDashboard": false
+    "dependencyDashboard": {
+        "enabled": false
+    }
 }
